@@ -7,15 +7,23 @@ var MessagesView = {
 
   initialize: function() {
     // TODO: Perform any work which needs to be done
-    // when this view loads.
+    // when this view loads.//click event
   },
 
   render: function() {
-    // TODO: Render _all_ the messages.
+    // TODO: Render _all_ the messages.//retrieve
+    //Messages._data is our local array
+    //iterate through data
+    //call messasgeview.render(for each object)
+
   },
 
   renderMessage: function(message) {
     // TODO: Render a single message.
+    //create element
+    $message = MessageView.render(message);
+    MessagesView.$chats.prepend($message);
+    //append element to messages messagesView.#chats.appendTo()
   },
 
   handleClick: function(event) {
@@ -24,3 +32,4 @@ var MessagesView = {
   }
 
 };
+//console.log('chats', MessagesView.$chats)

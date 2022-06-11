@@ -11,3 +11,4 @@ var Friends = {
   // and check the friendship status of other users.
 
 };
+

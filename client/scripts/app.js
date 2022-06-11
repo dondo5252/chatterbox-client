@@ -4,7 +4,7 @@
 
 var App = {
 
-  $spinner: $('.spinner img'),
+  $spinner: $('.spinner img'), //loading symbol
 
   username: 'anonymous',
 
@@ -26,8 +26,14 @@ var App = {
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
       // examine the response from the server request:
-      console.log(data);
-
+      console.log(data); /////
+      for (let i = 0; i < data.length; i++) {
+        Messages.create(data[i]);
+        if (data[i].roomname !== null) {
+          Rooms.updateList(data[i].roomname);
+        }
+      }
+    //store data in message.retrieve(Message.data)
       // TODO: Use the data to update Messages and Rooms
       // and re-render the corresponding views.
     });

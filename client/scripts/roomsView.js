@@ -17,6 +17,7 @@ var RoomsView = {
 
   renderRoom: function(roomname) {
     // TODO: Render out a single room.
+    // $rooms = RoomsView.render(roomname);
   },
 
   handleChange: function(event) {
@@ -28,3 +29,4 @@ var RoomsView = {
   }
 
 };
+//console.log(Rooms._data);
