@@ -1,6 +1,6 @@
 // RoomsView is an object which controls the DOM elements
 // responsible for displaying and selecting rooms.
-
+//
 var RoomsView = {
 
   $button: $('#rooms button'),

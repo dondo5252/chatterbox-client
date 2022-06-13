@@ -1,6 +1,6 @@
 // MessagesView is an object which controls the DOM elements
 // responsible for displaying messages.
-
+//
 var MessagesView = {
 
   $chats: $('#chats'),
